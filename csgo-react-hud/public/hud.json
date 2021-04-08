@@ -1,0 +1,12 @@
+{
+    "name":"EsportaSkola.lv",
+    "version":"1.0.3",
+    "author":"mAa4a",
+    "legacy": false,
+    "radar": true,
+    "killfeed": true,
+    "boltobserv":{
+        "css":true,
+        "maps":true
+    }
+}
