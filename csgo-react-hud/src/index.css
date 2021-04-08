@@ -44,12 +44,12 @@ code {
   --color-gray: rgba(191, 191, 191, 1.0);
   --color-moneys: #a7d32e;
   --dev-purple: rgba(200, 0, 255, 1);
-  --color-t: #c19511;
-  --color-ct: #5788a8;
-  --color-new-t: #f0c941;
-  --color-new-ct: #5ab8f4;
-  --color-bomb: #f22222;
-  --color-defuse: #2222f2;
+  --color-t: #b45061;
+  --color-ct: #139c5a;
+  --color-new-t: #FB738A;
+  --color-new-ct: #1EED89;
+  --color-bomb: #ff0000;
+  --color-defuse: #33ff00;
 }
 
 
