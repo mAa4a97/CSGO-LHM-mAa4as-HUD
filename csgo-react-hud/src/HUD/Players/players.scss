@@ -1,18 +1,18 @@
 .teambox {
     position: fixed;
-    bottom: 215px;
+    bottom: 116px;
     display: flex;
     flex-direction: column;
     opacity: 1;
     transition: opacity 0.75s;
     &.CT {
         .player .hp_bar {
-            background: linear-gradient(90deg, rgba(66,83,99,1) 0%, rgba(41,113,159,1) 47%, rgba(19,149,215,1) 100%);
+            background: linear-gradient(90deg, rgba(12,87,50,1) 0%, rgba(21,158,92,1) 35%, rgba(30,237,137,1) 100%);
         }
     }
     &.T {
         .player .hp_bar {
-            background: linear-gradient(270deg, rgba(184,127,4,1) 0%, rgba(156,107,7,1) 47%, rgba(110,89,36,1) 100%);;
+            background: linear-gradient(270deg, rgba(68,33,40,1) 0%, rgba(156,71,88,1) 35%, rgba(251,114,141,1) 100%);
         }
     }
     &.hide {
