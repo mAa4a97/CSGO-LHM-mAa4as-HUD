@@ -1,6 +1,6 @@
 .teambox {
     position: fixed;
-    bottom: 116px;
+    bottom: 80px;
     display: flex;
     flex-direction: column;
     opacity: 1;
@@ -160,18 +160,32 @@
             display: none;
             flex-direction: column;
             font-weight: 600;
-            color: white;
             opacity: 0.75;
             top: 10%;
-            .labels, .values {
+            .labels {
                 display: flex;
                 flex-direction: row;
                 flex: 1;
-                .stat-label, .stat-value {
+                .stat-label {
                     display: flex;
+                    &.CT {
+                        color: var(--color-new-ct)
+                    }
+                    &.CT {
+                        color: var(--color-new-t)
+                    }
                     flex: 1;
                     align-items: center;
                     justify-content: center;
+                }
+                .values {
+                    .stat-value {
+                        display: flex;
+                        color: white;
+                        flex: 1;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -192,7 +206,9 @@
         }
         .freezetime_KAD {
             background-color: var(--main-panel-color);
-            color: white;
+            .values .stat-value {
+                color: white;
+            }
             display: flex;
             flex-direction: column;
             width: 6rem;
@@ -207,7 +223,7 @@
         
         .player_data {
             background-color: var(--sub-panel-color);
-            width: 415px;
+            width: 380px;
             display: flex;
             flex-direction: row;
             position: relative;
@@ -370,12 +386,28 @@
         }
         .team_counter {
             color: white;
+            -webkit-text-stroke-width: 0.2px;
+  		    -webkit-text-stroke-color: black;
         }
         .CT {
             background-color: var(--color-new-ct);
+            text-shadow: var(--color-dark-ct) 1px 1px,
+			var(--color-dark-ct) 2px 2px,
+			var(--color-dark-ct) 3px 3px,
+			var(--color-dark-ct) 4px 4px,
+			var(--color-dark-ct) 5px 5px,
+            var(--color-dark-ct) 6px 6px,
+            var(--color-dark-ct) 7px 7px,
         }
         .T {
             background-color: var(--color-new-t);
+            text-shadow: var(--color-dark-t) 1px 1px,
+			var(--color-dark-t) 2px 2px,
+			var(--color-dark-t) 3px 3px,
+			var(--color-dark-t) 4px 4px,
+			var(--color-dark-t) 5px 5px,
+            var(--color-dark-t) 6px 6px,
+            var(--color-dark-t) 7px 7px,
         }
     }
     .title_container {
@@ -483,7 +515,7 @@
     color: var(--mainT);
 }
 .teambox .player .freezetime_KAD {
-    background-color: var(--main-panel-color);
+    background-color: var(--sub-panel-color);
     .CT {
         color: var(--color-new-ct);
     }
@@ -503,8 +535,14 @@
 }
 
 .teambox.left .player .freezetime_KAD {
-    margin-left: 0.5rem;
+    .labels .stat-label {
+        color: var(--color-new-ct);
+    }
+    margin-left: 0rem;
 }
 .teambox.right .player .freezetime_KAD {
-    margin-right: 0.5rem;
+    .labels .stat-label {
+        color: var(--color-new-t);
+    }
+    margin-right: 0rem;
 }

@@ -48,6 +48,8 @@ code {
   --color-ct: #139c5a;
   --color-new-t: #FB738A;
   --color-new-ct: #1EED89;
+  --color-dark-ct: #13a35d;
+  --color-dark-t: #9e4957;
   --color-bomb: #ff0000;
   --color-defuse: #33ff00;
 }
