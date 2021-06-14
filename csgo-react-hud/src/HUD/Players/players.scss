@@ -5,14 +5,25 @@
     flex-direction: column;
     opacity: 1;
     transition: opacity 0.75s;
-    &.CT {
+    &.left.CT {
         .player .hp_bar {
-            background: linear-gradient(90deg, rgba(12,87,50,1) 0%, rgba(21,158,92,1) 35%, rgba(30,237,137,1) 100%);
+            background: linear-gradient(90deg, rgba(66,83,99,1) 0%, rgba(41,113,159,1) 47%, rgba(19,149,215,1) 100%);
         }
     }
-    &.T {
+    &.right.CT {
         .player .hp_bar {
-            background: linear-gradient(270deg, rgba(68,33,40,1) 0%, rgba(156,71,88,1) 35%, rgba(251,114,141,1) 100%);
+            background: linear-gradient(270deg, rgba(66,83,99,1) 0%, rgba(41,113,159,1) 47%, rgba(19,149,215,1) 100%);
+
+        }
+    }
+    &.left.T {
+        .player .hp_bar {
+            background: linear-gradient(270deg, rgba(184,127,4,1) 0%, rgba(156,107,7,1) 47%, rgba(110,89,36,1) 100%);
+        }
+    }
+    &.right.T {
+        .player .hp_bar {
+            background: linear-gradient(90deg, rgba(184,127,4,1) 0%, rgba(156,107,7,1) 47%, rgba(110,89,36,1) 100%);
         }
     }
     &.hide {
@@ -516,10 +527,10 @@
 }
 .teambox .player .freezetime_KAD {
     background-color: var(--sub-panel-color);
-    .CT {
+    &.CT {
         color: var(--color-new-ct);
     }
-    .T {
+    &.T {
         color: var(--color-new-t)
     }
     display: flex;
@@ -534,15 +545,21 @@
     opacity: 0;
 }
 
-.teambox.left .player .freezetime_KAD {
+.teambox.CT .player .freezetime_KAD {
     .labels .stat-label {
         color: var(--color-new-ct);
     }
-    margin-left: 0rem;
+    margin-left: 0px;
 }
-.teambox.right .player .freezetime_KAD {
+.teambox.T .player .freezetime_KAD {
     .labels .stat-label {
         color: var(--color-new-t);
     }
-    margin-right: 0rem;
+    margin-right: 0px;
+}
+.teambox.left .player .freezetime_KAD {
+    margin-left: 0px;
+}
+.teambox.right .player .freezetime_KAD {
+    margin-right: 0px;
 }

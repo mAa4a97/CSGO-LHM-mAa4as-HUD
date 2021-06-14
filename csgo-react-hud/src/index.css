@@ -44,12 +44,14 @@ code {
   --color-gray: rgba(191, 191, 191, 1.0);
   --color-moneys: #a7d32e;
   --dev-purple: rgba(200, 0, 255, 1);
-  --color-t: #b45061;
-  --color-ct: #139c5a;
-  --color-new-t: #FB738A;
-  --color-new-ct: #1EED89;
-  --color-dark-ct: #13a35d;
-  --color-dark-t: #9e4957;
+  --color-t: #c19511;
+  --color-ct: #5788a8;
+  --color-new-t: #f0c941;
+  --color-new-ct: #5ab8f4;
+  --color-dark-ct: #2b5a77;
+  --color-dark-t: #967e28;
+  --color-light-ct: rgba(87, 136, 168, 0.6);
+  --color-light-t: rgba(193, 149, 17, 0.6);
   --color-bomb: #ff0000;
   --color-defuse: #33ff00;
 }

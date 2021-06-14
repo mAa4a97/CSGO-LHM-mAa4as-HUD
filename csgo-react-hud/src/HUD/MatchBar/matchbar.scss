@@ -212,31 +212,60 @@
 
 }
 .win_text {
-	position: fixed;
-	display: none;
-	opacity: 1;
-	width: 426px;
-	height: 45px;
-	top: 70px;
-	align-items: center;
-	color: black;
+	text-transform: uppercase;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 150px;
+	background-color: var(--sub-panel-color);
+	width: 0;
+	height: 160px;
+	opacity: 0;
+	font-size: 50px;
+	transition: width 0.4s ease-in-out;
+	color: #fff !important;
+	font-weight: bold;
+	text-shadow: -3px 7px 30px rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	background-color: white;
-	font-size: 20px;
-	font-family: Montserrat;
-    font-weight: 600;
-    &.show {
-        display: flex;
-        animation: ShowWinCycle 5s linear 1;
-        animation-fill-mode: forwards;
-    }
-    &.right {
-        left: calc(50% + 140px); //old left: calc(50% + 71px);
-    }
-    &.left {
-        right: calc(50% + 140px); //old right: calc(50% + 71px);
-    }
-}
+	align-items: center;
+	text-align: center;
+	// font-family: "Roboto", sans-serif;
+	padding: 0 30px;
+  
+	span {
+	  &:nth-of-type(2) {
+		font-weight: normal;
+		font-style: italic;
+		font-size: 30px;
+		opacity: 0.6;
+	  }
+	}
+  
+	&.show {
+	  width: 550px;
+	  opacity: 1;
+  
+	  transition: width 0.4s ease-in-out, box-shadow 0.4s 0.4s ease-in-out;
+	}
+  
+	&.T {
+	  box-shadow: var(--color-new-t) 0px 0px 0 0;
+  
+	  &.show {
+		box-shadow: var(--color-light-t) 15px 15px 0 0;
+	  }
+	}
+  
+	&.CT {
+	  box-shadow: var(--color-new-ct) 0px 0px 0 0;
+  
+	  &.show {
+		box-shadow: var(--color-light-ct) 15px 15px 0 0;
+	  }
+	}
+  }
 
 .defuse_plant_container {
 	position: fixed;

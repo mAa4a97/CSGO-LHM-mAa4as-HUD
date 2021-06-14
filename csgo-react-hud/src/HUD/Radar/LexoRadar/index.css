@@ -181,10 +181,10 @@ html, body, .map-container {
     animation: BombDefused 2s 1 forwards;
 }
 .map .player.CT .label {
-    background: radial-gradient(#159e5c, #1eed89);
+    background: radial-gradient(rgb(61, 141, 224), rgb(42, 49, 119));
 }
 .map .player.T .label {
-    background: radial-gradient(#9c4758, #fb728d);    
+    background: radial-gradient(rgb(255, 129, 0), var(--color-new-t));
 }
 .map .player.T.hasBomb .label {
     background: red;
