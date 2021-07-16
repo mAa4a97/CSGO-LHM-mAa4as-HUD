@@ -563,3 +563,30 @@
 .teambox.right .player .freezetime_KAD {
     margin-right: 0px;
 }
+.teambox .player .spending {
+    background-color: var(--sub-panel-color);
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.75s;
+}
+.teambox .player .spending.hide {
+    opacity: 0;
+}
+.teambox .player .spending .label,
+.teambox .player .spending .value {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.teambox .player .spending {
+    .label {
+        color: greenyellow; 
+    }
+    .value {
+        color: red;
+    }
+}
