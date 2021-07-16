@@ -19,9 +19,9 @@ Fullfledged example of the React HUD made for HUD Manager. It has:
 
 ## Shoutouts:
 Thank you:
-ZenLV for sharing function for freeztime money spent.
-bennibjorn for sharing in his open source HUD freeztime_KAD boxes.
-EHLS for sharing in theirs open source HUD Round Win animation.
+- ZenLV for sharing function for freeztime money spent.
+- bennibjorn for sharing in his open source HUD freeztime_KAD boxes.
+- EHLS for sharing in theirs open source HUD Round Win animation.
 
 ## Keybinds:
 ### **Left Alt + S**
