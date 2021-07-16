@@ -64,6 +64,7 @@ Thank you:
 ## Preview
 
 ![Preview of HUDs panel in action](preview.png)
+![Preview of HUDs Win indicator](preview1.png)
 
 # Download
 
